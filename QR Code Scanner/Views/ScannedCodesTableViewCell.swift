@@ -14,7 +14,7 @@ struct ScannedCodesViewModel: Codable {
 class ScannedCodesTableViewCell: UITableViewCell {
     private lazy var link: UILabel = {
        let label = UILabel()
-        label.font = UIFont(name: label.font.fontName, size: 17)
+        label.font = .boldSystemFont(ofSize: 20)
         label.text = "https://www.facebook.com https://www.facebook.com https://www.facebook.com https://www.facebook.com"
         label.numberOfLines = 0
         return label
